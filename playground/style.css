@@ -3,10 +3,10 @@
   margin: 30px auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3] 200px;
-      grid-template-columns: repeat(3, 1fr) 200px;
-  -ms-grid-rows: 100px 200px 400px 100px;
-      grid-template-rows: 100px 200px 400px 100px;
+  -ms-grid-columns: ([col-start] 1fr [col-end])[3] 200px [grid-end];
+      grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+  -ms-grid-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
+      grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
   gap: 30px;
 }
 
@@ -19,25 +19,19 @@
 }
 
 .challenge .header {
-  grid-column: 1/ -1;
+  grid-column: col-start 1 / grid-end;
 }
 
 .challenge .sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2 / span 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 /5;
+  grid-row: box-start / main-end;
+  grid-column: col-end 3 / grid-end;
 }
 
 .challenge .main-content {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
+  grid-column: col-start 1 / col-end 3;
 }
 
 .challenge .footer {
-  grid-column: 1/-1;
+  grid-column: col-start 1 / grid-end;
 }
 /*# sourceMappingURL=style.css.map */
