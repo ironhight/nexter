@@ -1,0 +1,24 @@
+.container {
+  with: 1000px;
+  margin: 30px auto;
+  background-color: #ddd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (150px)[2];
+      grid-template-rows: repeat(2, 150px);
+  gap: 30px;
+  grid-auto-rows: 80px;
+  grid-auto-flow: column;
+  grid-auto-columns: .5fr;
+}
+
+.container .item {
+  padding: 20px;
+  color: white;
+  font-family: serif;
+  font-size: 30px;
+  background-color: orangered;
+}
+/*# sourceMappingURL=style.css.map */
