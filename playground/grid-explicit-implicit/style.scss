@@ -9,9 +9,12 @@
     gap: 30px;
 
     grid-auto-rows: 80px;
+    height: 1000px;
     
-    grid-auto-flow: column;
-    grid-auto-columns: .5fr;
+    // grid-auto-flow: column;
+    // grid-auto-columns: .5fr;
+
+    justify-content: space-between;
 
     .item {
         padding: 20px;
