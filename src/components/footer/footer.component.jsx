@@ -1,38 +1,38 @@
 const Footer = () => (
-	<footer class="footer">
-		<ul class="nav">
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+	<footer className="footer">
+		<ul className="nav">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Find your dream home
 				</a>
 			</li>
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Request proposal
 				</a>
 			</li>
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Download home planner
 				</a>
 			</li>
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Contact us
 				</a>
 			</li>
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Submit your property
 				</a>
 			</li>
-			<li class="nav__item">
-				<a href="/#" class="nav__link">
+			<li className="nav__item">
+				<a href="/#" className="nav__link">
 					Come work with us!
 				</a>
 			</li>
 		</ul>
-		<p class="copyright">&copy; Copyright 2021 by Nexter</p>
+		<p className="copyright">&copy; Copyright 2021 by Nexter</p>
 	</footer>
 );
 

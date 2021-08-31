@@ -1,6 +1,6 @@
 const SideBar = () => (
-	<div class="sidebar">
-		<button class="nav-btn"></button>
+	<div className="sidebar">
+		<button className="nav-btn"></button>
 	</div>
 );
 
